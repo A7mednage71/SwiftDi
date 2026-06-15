@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+
+protocol MovieServiceProtocol {
+    func fetchMovies(completion: @escaping (Result<[Movie],Error>) -> Void )
+}

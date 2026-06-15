@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct DIApp: App {
+    
+    private let factory = AppAssembler.shared.resolveMovieListViewFactory()
+    
     var body: some Scene {
+        
         WindowGroup {
-            ContentView()
+//            let viewModel = AppAssembler.shared.resolveMovieViewModel()
+//            MovieListView(viewModel: viewModel)
+            
+            factory.makeMovieListView()
         }
     }
 }

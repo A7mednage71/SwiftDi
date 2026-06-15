@@ -6,8 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2CD70DF02FE020490091AB12 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 2CD70DEF2FE020490091AB12 /* Swinject */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		2C0CF6342FDEB68A001AF35E /* DI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CD70DC92FE01F6E0091AB12 /* DI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD70DF02FE020490091AB12 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,16 +38,8 @@
 			isa = PBXGroup;
 			children = (
 				2C0CF6362FDEB68A001AF35E /* DI */,
-				2C0CF6352FDEB68A001AF35E /* Products */,
+				2CD70DC92FE01F6E0091AB12 /* DI.app */,
 			);
-			sourceTree = "<group>";
-		};
-		2C0CF6352FDEB68A001AF35E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2C0CF6342FDEB68A001AF35E /* DI.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +62,10 @@
 			);
 			name = DI;
 			packageProductDependencies = (
+				2CD70DEF2FE020490091AB12 /* Swinject */,
 			);
 			productName = DI;
-			productReference = 2C0CF6342FDEB68A001AF35E /* DI.app */;
+			productReference = 2CD70DC92FE01F6E0091AB12 /* DI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -94,8 +92,11 @@
 			);
 			mainGroup = 2C0CF62B2FDEB68A001AF35E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2CD70DEE2FE020490091AB12 /* XCRemoteSwiftPackageReference "swinject" */,
+			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 2C0CF6352FDEB68A001AF35E /* Products */;
+			productRefGroup = 2C0CF62B2FDEB68A001AF35E;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -320,6 +321,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CD70DEE2FE020490091AB12 /* XCRemoteSwiftPackageReference "swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swinject/swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2CD70DEF2FE020490091AB12 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CD70DEE2FE020490091AB12 /* XCRemoteSwiftPackageReference "swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C0CF62C2FDEB68A001AF35E /* Project object */;
 }
